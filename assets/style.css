@@ -6,6 +6,10 @@ padding: 0;
 box-sizing: border-box;
 }
 
+body {
+font-family: sans-serif;
+}
+
 header {
     background-color: #00008b;
     padding-bottom: 1rem;
@@ -20,10 +24,12 @@ nav.top_nav {
     margin-inline: 15%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #daa520;
 }
 
-header span {
+header span,
+header a {
     border: 1px dashed black;
     flex: 1 0 auto;
     padding: 0.25rem;
@@ -37,8 +43,10 @@ header .link {
     text-align: center;
 }
 
-header .button {
+header a {
     text-align: right;
+    text-decoration: none;
+    color: black
 }
 
 .header_title_box {
@@ -49,7 +57,7 @@ header .button {
     border:  1px dashed black;;
 }
 
-section {
+.boxes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,10 +65,10 @@ section {
 }
 
 .bigger {
-width: 45%;
-height: 20rem;
-background-color: #1e90ff;
-border:  1px dashed black;;
+    width: 45%;
+    height: 20rem;
+    background-color: #1e90ff;
+    border:  1px dashed black;;
 }
 
 .smaller {
@@ -71,7 +79,8 @@ border:  1px dashed black;;
 }
 
 .grey {
-background-color: lightgrey;
+    background-color: lightgrey;
+    flex-direction: row-reverse;
 }
 
 .green_box {
@@ -79,5 +88,57 @@ background-color: lightgrey;
     height: 28rem;
     background-color: #228b22;
     border:  1px dashed black;;
-    }
-    
+}
+
+footer {
+    background-color: #23272a;
+}
+
+.footer {
+padding: 0.5rem 0 1.5rem;
+}
+
+.large {
+    width: calc(70% / 3);
+    height: 20rem;
+    background-color: #f08080;
+    border:  1px dashed black;;
+}
+
+.normal {
+    width: calc(70% / 6);
+    height: 20rem;
+    background-color: #20b2aa;
+    border:  1px dashed black;;
+}
+
+nav.bottom_nav {
+    max-width: 70%;
+    margin-inline: auto;
+    background-color: #7fffd4;
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+}
+
+.footer_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span,
+footer button {
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+    flex: 0 0 auto;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer button {
+    font-size: 1em;
+}
