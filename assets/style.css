@@ -41,10 +41,43 @@ header .button {
     text-align: right;
 }
 
-.header_title {
+.header_title_box {
     margin: 2rem auto 1rem;
     width: 40rem;
-    height: 20rem;
+    height: 18rem;
     background-color: #ee82ee;
     border:  1px dashed black;;
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.bigger {
+width: 45%;
+height: 20rem;
+background-color: #1e90ff;
+border:  1px dashed black;;
+}
+
+.smaller {
+    width: 25%;
+    height: 20rem;
+    background-color: #ffc0cb;
+    border:  1px dashed black;;
+}
+
+.grey {
+background-color: lightgrey;
+}
+
+.green_box {
+    width: 70%;
+    height: 28rem;
+    background-color: #228b22;
+    border:  1px dashed black;;
+    }
+    
