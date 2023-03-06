@@ -1,0 +1,50 @@
+*, 
+*::before,
+*::after  {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+    background-color: #00008b;
+    padding-bottom: 1rem;
+}
+
+nav.top_nav {
+    background-color: #add8e6;
+    padding: 0.5rem 0;
+}
+
+.header_wrap {
+    margin-inline: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: #daa520;
+}
+
+header span {
+    border: 1px dashed black;
+    flex: 1 0 auto;
+    padding: 0.25rem;
+}
+
+header .logo {
+    text-align: left;
+}
+
+header .link {
+    text-align: center;
+}
+
+header .button {
+    text-align: right;
+}
+
+.header_title {
+    margin: 2rem auto 1rem;
+    width: 40rem;
+    height: 20rem;
+    background-color: #ee82ee;
+    border:  1px dashed black;;
+}
