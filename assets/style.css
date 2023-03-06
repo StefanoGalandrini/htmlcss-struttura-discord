@@ -1,4 +1,4 @@
-*, 
+*,              /*reset */
 *::before,
 *::after  {
 margin: 0;
@@ -6,7 +6,7 @@ padding: 0;
 box-sizing: border-box;
 }
 
-body {
+body {          /* font sans-serif generico */
 font-family: sans-serif;
 }
 
@@ -15,12 +15,12 @@ header {
     padding-bottom: 1rem;
 }
 
-nav.top_nav {
+.top_nav {
     background-color: #add8e6;
     padding: 0.5rem 0;
 }
 
-.header_wrap {
+.header_wrap {      /* contenitore per elementi flex */
     margin-inline: 15%;
     display: flex;
     justify-content: center;
@@ -43,7 +43,7 @@ header .link {
     text-align: center;
 }
 
-header a {
+a {             /* proprietà comuni dei link di header e footer */
     text-align: right;
     text-decoration: none;
     color: black
@@ -51,20 +51,20 @@ header a {
 
 .header_title_box {
     margin: 2rem auto 1rem;
-    width: 40rem;
+    width: 50%;
     height: 18rem;
     background-color: #ee82ee;
     border:  1px dashed black;;
 }
 
-.boxes {
+.boxes {            /* proprietà comuni dei box <div> */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
 }
 
-.bigger {
+.bigger { 
     width: 45%;
     height: 20rem;
     background-color: #1e90ff;
@@ -94,8 +94,8 @@ footer {
     background-color: #23272a;
 }
 
-.footer {
-padding: 0.5rem 0 1.5rem;
+.foot {
+    padding: 0.5rem 0 1.5rem;
 }
 
 .large {
@@ -112,7 +112,7 @@ padding: 0.5rem 0 1.5rem;
     border:  1px dashed black;;
 }
 
-nav.bottom_nav {
+.bottom_nav {
     max-width: 70%;
     margin-inline: auto;
     background-color: #7fffd4;
@@ -127,18 +127,11 @@ nav.bottom_nav {
 }
 
 footer span,
-footer button {
+footer a,
+footer .logo {
     background-color: #ffb6c1;
     border: 1px dashed black;
     flex: 0 0 auto;
     padding: 0.25rem;
     text-align: center;
-}
-
-footer .logo {
-    text-align: center;
-}
-
-footer button {
-    font-size: 1em;
 }
